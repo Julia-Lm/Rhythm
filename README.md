@@ -4,11 +4,8 @@ https://julia-lm.github.io/Rhythm/
 
 # Используемые технологии:
 
--HTML
-
--CSS
-
--JavaScript
+-HTML/CSS/JavaScript
+-Swiper
 
 # Реализация:
 
