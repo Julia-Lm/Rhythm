@@ -1,0 +1,115 @@
+
+.footer {
+	background: $footer-background-color;
+	padding-top: 80px;
+	padding-bottom: 40px;
+
+    @media (max-width: 991.98px){
+        padding-top: 30px;
+	    padding-bottom: 30px;
+    }
+
+    &__copy {
+        padding-top: 80px;
+        text-align: center;
+
+        @media (max-width: 767.98px){
+            padding-top: 50px;
+        }
+    }
+}
+.body-footer {
+	display: flex;
+	gap: 50px;
+
+    @media (max-width: 991.98px){
+        flex-wrap: wrap;
+		justify-content: space-between;
+    }
+    &__column:first-child{
+        @media (max-width: 991.98px){
+            flex: 1 1 100%;
+        }
+    }
+    &__column_full{
+        flex: 1 1 auto;
+
+        @media (max-width: 991.98px){
+            flex: 0 1 50%;
+        }
+    }
+    &__logo {
+        display: inline-block;
+    }
+    &__logo:not(:last-child){
+        margin-bottom: 28px;
+    }
+}
+.contacts-footer{
+
+    &__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    &__link {
+        color: $text-color;
+        display: inline-block;
+        line-height: 24px;
+        padding-left: 44px;
+    }
+    &__link:hover {
+        text-decoration: underline;
+    }
+    &__link_mail {
+        background: url('../img/footer/sms.svg') left no-repeat;
+    }
+    &__link_location {
+        background: url('../img/footer/location.svg') left no-repeat;
+    }
+}
+
+.menu-footer {
+	display: flex;
+	gap:120px;
+	justify-content: center;
+
+    @media (max-width: 991.98px){
+        display: flex;
+		gap: 50px;
+		justify-content: space-between;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: $title-color;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        margin-bottom:20px;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    &__link {
+        color: $text-color;
+    }
+    &__link:hover{
+        text-decoration: underline;
+    }
+}
+
+.social-footer{
+
+    &__title {
+        text-transform: uppercase;
+        color: $title-color;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        margin-bottom: 12px;
+    }
+    &__items {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+}
