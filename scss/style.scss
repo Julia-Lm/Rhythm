@@ -8,6 +8,14 @@
 	font-style: normal;
 }
 
+$primary-color: #FF6428;
+$primary-color-hover: #ba4619;
+$title-color: #121212;
+$text-color: #666;
+$background-icon: #262626;
+$footer-background-color: #EEEEEE;
+$font-stack: Poppins, sans-serif;
+
 *, *::before, *::after{
     margin: 0;
     padding: 0;
@@ -22,9 +30,9 @@ html, body{
 
 body{
     line-height: 1;
-    font-family: Poppins, sans-serif;
+    font-family: $font-stack;
     font-size: 16px;
-    color: #666666;
+    color: $text-color;
 }
 a {
 	text-decoration: none;
@@ -43,7 +51,7 @@ li {
 
 .title{
 	font-family: CalSans;
-	color: #121212;
+	color: $title-color;
 	text-align: center;
 	font-size: 44px;
 	line-height: 1.2;
@@ -53,7 +61,7 @@ li {
     }
 }
 .title span{
-	color: #FF6428;
+	color: $primary-color;
 }
 
 /* ---------------------------------------- */
@@ -181,7 +189,7 @@ li {
             &__button {
                 text-align: center;
                 padding: 18.5px 48px;
-                background-color: #FF6428;
+                background-color: $primary-color;
                 border-radius: 40px;
                 color: #fff;
                 font-weight: 600;
@@ -193,7 +201,7 @@ li {
                 }
             }
             &__button:hover{
-                background-color: #ba4619;
+                background-color: $primary-color-hover;
             }
             &__button:not(:last-child) {
                 margin-right: 40px;
@@ -210,7 +218,7 @@ li {
     }
     &__title {
         font-family: CalSans;
-        color: #121212;
+        color: $title-color;
         font-size: 56px;
         line-height: 1.2;
 
@@ -219,7 +227,7 @@ li {
         }
 
         span {
-	        color: #FF6428;
+	        color: $primary-color;
         }
     }
     &__title:not(:last-child) {
@@ -319,7 +327,7 @@ li {
         font-size: 20px;
         line-height: 1.5;
         text-transform: uppercase;
-        color: #121212;
+        color: $title-color;
         font-weight: 600;
     }
     &__all {
@@ -362,7 +370,7 @@ li {
     }
 
     &__title {
-        color: #121212;
+        color: $title-color;
         font-weight: 500;
         font-size: 16px;
         line-height:1.5;
@@ -526,7 +534,7 @@ li {
 
 /* --------------------------------------- */
 .why {
-	background-color: #121212;
+	background-color: $title-color;
 	padding-top: 90px;
 	padding-bottom: 90px;
 
@@ -566,7 +574,7 @@ li {
     }
 
     &__icon {
-        background: #262626;
+        background: $background-icon;
         border-radius: 20px;
         display: flex;
         width: 72px;
@@ -672,7 +680,7 @@ li {
         top: 50px;
         left: -80px;
         transform: rotate(-10deg);
-        background-color: #FF6428;
+        background-color: $primary-color;
         border-radius: 40px 0px 400px 400px;
 
         @media (max-width: 479.98px){
@@ -744,7 +752,7 @@ li {
     }
 
     .swiper-pagination-bullet-active{
-        background: #FF6428;
+        background: $primary-color;
         flex: 0 0 24px;
     }
 }
@@ -822,7 +830,7 @@ li {
 /* ----------------------------------- */
 
 .footer {
-	background: #EEEEEE;
+	background: $footer-background-color;
 	padding-top: 80px;
 	padding-bottom: 40px;
 
@@ -873,7 +881,7 @@ li {
         margin-bottom: 20px;
     }
     &__link {
-        color: #666;
+        color: $text-color;
         display: inline-block;
         line-height: 24px;
         padding-left: 44px;
@@ -902,7 +910,7 @@ li {
 
     &__title {
         text-transform: uppercase;
-        color: #121212;
+        color: $title-color;
         font-size: 18px;
         font-weight: 600;
         line-height: 27px;
@@ -912,7 +920,7 @@ li {
         margin-bottom: 16px;
     }
     &__link {
-        color: #666;
+        color: $text-color;
     }
     &__link:hover{
         text-decoration: underline;
@@ -923,7 +931,7 @@ li {
 
     &__title {
         text-transform: uppercase;
-        color: #121212;
+        color: $title-color;
         font-size: 18px;
         font-weight: 600;
         line-height: 27px;
